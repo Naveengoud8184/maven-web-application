@@ -24,17 +24,17 @@ pipeline {
                 echo "--------unit test completed----"
             }
         }
-    stage('SonarQube analysis') {
-    environment {
-      scannerHome = tool 'SonarQube';
+        stage('SonarQube analysis') {
+        environment {
+           scannerHome = tool 'SonarQube';
     }
-    steps{
-    withSonarQubeEnv('sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
-      sh "${scannerHome}/bin/sonar-scanner"
+        steps{
+        withSonarQubeEnv('sonarqube-server') { // If you have configured more than one global server connection, you can specify its name
+        sh "${scannerHome}/bin/sonar-scanner"
     }
     }
          stage("Jar Publish") {
-        steps {
+         steps {
             script {
                     echo '<--------------- Jar Publish Started --------------->'
                      def server = Artifactory.newServer url:registry+"/artifactory" ,  credentialsId:"jfrog-token"
