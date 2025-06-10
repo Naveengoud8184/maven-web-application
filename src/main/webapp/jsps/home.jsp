@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>MithunTechnologies- Home Page</title>
+<title>NaveeProfile- Home Page</title>
 <link href="images/Naveen_DevOps_Resume.png" rel="icon">
 </head>
 </head>
@@ -35,7 +35,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/mithunlogo.jpg" alt="" width="100">
+		<img src="images/Naveen_DevOps_Resume.png" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
 		 Hyderabad,
