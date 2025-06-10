@@ -1,4 +1,6 @@
 def registry = 'https://trial9ilfd6.jfrog.io/'
+def imageName = 'trial9ilfd6.jfrog.io/project-docker-local/sampleproject'
+def version   = '0.0.1'
 
 pipeline {
     agent {
@@ -64,6 +66,28 @@ pipeline {
                     echo '<--------------- Jar Publish Ended --------------->'
                 }
             }
+        } 
+    
+    stage(" Docker Build ") {
+      steps {
+        script {
+           echo '<--------------- Docker Build Started --------------->'
+           app = docker.build(imageName+":"+version)
+           echo '<--------------- Docker Build Ends --------------->'
         }
+      }
+    }
+
+            stage (" Docker Publish "){
+        steps {
+            script {
+               echo '<--------------- Docker Publish Started --------------->'  
+                docker.withRegistry(registry, 'jfrog-token'){
+                    app.push()
+                }    
+               echo '<--------------- Docker Publish Ended --------------->'  
+            }
+        }
+    } 
     }
 }
