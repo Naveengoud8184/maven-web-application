@@ -9,11 +9,11 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Mithun Technologies</h1>
-<h1 align="center">Phone Number: +91 9980923216</h1>
-<h1 align="center">Mithun Technologies is a Very Good Training Center for DevOps, Cloud, Kubernetes and Terraform</h1>
+<h1 align="center">Naveen Arvapalli</h1>
+<h1 align="center">Phone Number: +91 8184899742</h1>
+<h1 align="center">Linkedin- https://www.linkedin.com/in/naveen-70414b238/</h1>
 
-<h1 align="center">Trainer Name: Bhaskar Reddy Lacchannagari</h1>
+<h1 align="center">Github- https://github.com/Naveengoud8184?tab=repositories</h1>
 
 <hr>
 <br>
@@ -38,13 +38,12 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 		<img src="images/mithunlogo.jpg" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
-		Mithun Technologies, 
-		Marathahalli,
-		Bengaluru,
-		+91 9980923216 and 
-		Devopstrainingblr@Gmail.com
+		 Hyderabad,
+		 Telanagana,
+		+91 8184899742 and 
+		naveena81848@gmail.com
 		<br>
-		<a href="mailto:Devopstrainingblr@Gmail.com">Mail to Mithun Technologies</a>
+		<a href="mailto:naveena81848@gmail.com">Mail to Naveen</a>
 	</span>
 </div>
 <hr>
